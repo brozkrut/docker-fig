@@ -13,6 +13,6 @@ RUN curl -L https://github.com/docker/fig/releases/download/1.0.0/fig-`uname -s`
 VOLUME ["/config"]
 WORKDIR ["/config"]
 
-# Default run "fig --version"
+# Default run "fig --help"
 ENTRYPOINT ["/usr/local/bin/fig"]
 CMD ["--help"]
