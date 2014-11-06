@@ -11,7 +11,7 @@ RUN curl -sSL https://get.docker.com/ubuntu/ | sudo sh
 RUN curl -L https://github.com/docker/fig/releases/download/1.0.0/fig-`uname -s`-`uname -m` > /usr/local/bin/fig ; chmod +x /usr/local/bin/fig
 
 VOLUME ["/config"]
-WORKDIR ["/config"]
+WORKDIR /config
 
 # Default run "fig --help"
 ENTRYPOINT ["/usr/local/bin/fig"]
